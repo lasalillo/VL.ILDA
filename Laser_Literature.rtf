@@ -1,0 +1,214 @@
+{\rtf1\ansi\deff0\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\fnil\fprq2\fcharset0 Mangal;}{\f4\fnil\fprq0\fcharset128 Mangal;}{\f5\froman\fprq0\fcharset128 ;}{\f6\fnil\fprq2\fcharset0 Microsoft YaHei;}}
+{\colortbl;\red0\green0\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082 Predeterminado;}
+{\s15\sbasedon0\snext16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb240\sa120\keepn\cf0\kerning1\hich\af3\langfe2052\dbch\af6\loch\f2\fs28\lang3082 Encabezado;}
+{\s16\sbasedon0\snext16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082 Cuerpo de texto;}
+{\s17\sbasedon16\snext17{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af4\langfe2052\dbch\af0\loch\f0\fs24\lang3082 Lista;}
+{\s18\sbasedon0\snext18{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb120\sa120\cf0\i\kerning1\hich\af4\langfe2052\dbch\af0\ai\loch\f0\fs24\lang3082 Etiqueta;}
+{\s19\sbasedon0\snext19{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af4\langfe2052\dbch\af0\loch\f0\fs24\lang3082 Índice;}
+}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr0\mo0\dy0\hr0\min0}{\printim\yr0\mo0\dy0\hr0\min0}{\comment OpenOffice}{\vern4150}}\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709\deftab709
+
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse195\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Predeterminado;}
+{\pgdsc1\pgdscuse195\pgndec\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn567\margtsxn567\margbsxn567\pgdscnxt1 HTML;}}
+\formshade{\*\pgdscno0}\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+Always keep in mind that laser scanning is mechnical stuff where mirrors have to be moved around, so this is relatively slow. Acceleration, deceleration, and movement of the mirrors needs time.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+\line Lasershow software uses a frame oriented approach. You can compare a laser frame to a single picture of a movie. If you want to do animations, you have to calculate different frames and display one after each other.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+\line For laser projectors, a frame is an array of points. Each point has a position and color. The lasershow software calculates the array of points for a single frame and sends it to my ILDA interface. My interface outputs one point after each other at the given scan speed. Even if the lasershow software crashes, my interface will continue to output the last frame.\line If you have several objects within one frame, you have to use a technique that is called 'blanking'. After the last point of the first object, switch off the laser (all color values to 0) and move the scanner mirror to the begin of the second object. There you switch on the laser again, and draw the points of the second object.\line The distance between two consecutive points of a frame must not be too far, otherwise you might damage the scanners, and the result will look very unprecise.\line In most lasershow softwares, you have several scan parameters which can be adjusted to match your projector:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+1.\line Maximum distance between points. For example, if you draw a line from the very left to the very right (which is coordinate X=-32768...+32767), a typical value would be to have ~100 points for this line. So the max distance would be ~327.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+2.\line Maximum distance for blanked points. If the laser is blanked its ok to move it faster (higher distance between the points) because you cannot see when the movement unprecise. However, do not go too fast, because this might damage the scanners. For example, let's double the speed by setting max distance to ~650.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+3.\line Additional points at object begin. Usually, you draw the first point of an object several times (~5 points at the same position) in order to sattle the mirror position and get a precise start position.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+4.\line Additional points at object end.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+5.\line Additional corner points (to get precise, sharp edges in a square where scanners have to stop and change their direction).}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+6.\line Color shift. In some (old) laser projector, the different laser colors have different reaction time. Activation of red color is faster then green and so on. You can compensate this with colorshift.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+\line And so on..... There's a lot of know how in the optimization routines of lasershow software, and it needs some experience to get good results. Always listen to the sound of your scanners. You can hear if they work smooth, or if they are overloaded.\line For the example above, what's the total number of points in that frame?\line Draw from left to right: 100points\line Add some line end points: 5\line Go back to the start point drawing a blanked line at higher speed: 50points\line Add some line start points: 5\line ---> total 160 points}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+If you display this frame with a scan speed of 16000 points per second (16kpps), it is displayed with 100 frames per second. If you have very complex graphics frames, for example with 3200 points per frame, this will be displayed with 5fps which looks ugly because it is very flickery. If you want to have nice and smooth animations without flicker, you should have >30fps.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+The best high end scanners on the market can do ~45kpps at realistic scan angles. Chinese scanners typically <25kpps. So take care that you have not too many points in a frame.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+I think the LumaxNet I sent you can do 120kpps maximum speed. In any case, thats way more than any scanner can display. In my private setup I use 35kpps with professional scanners (they could do more, but I don't want to harm them).\line So please be careful when using high scan rates at full scan angle.}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082\sb0\sa283{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+The maximum number of points in a frame is limited to something ~4000 points. However, it makes no sense to draw frames with so many points because of the flicker at low fps.}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+\line For several network devices (up to 16), each one needs to have its individual IP adress. You can simply use DHCP, or set it manually with DIP switches as explained in the document I sent.\line You cannot change the ID. This is a read-only information just to identify the interfaces.\line Just follow the code example. Check how many devices are connected, and then open them. The open command will return a handle to the interface. This handle can be used when sending frame data.}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+Sollinger Laser Projectors:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+TIMING:}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+To start repeat: 0,778 msec}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+Post beam on / off: 0,074 msec}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+Pre beam on: 0,185 msec}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+Pre beam off: 0,11 msec}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+Color delay: 0,11 msec (Normally in the laser settings)}
+\par \pard\plain \s0{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\nowidctlpar\cf0\kerning1\hich\af3\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+wait time in the following means : output of the X,Y position and keeping it stable for the mentioned wait time}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+pre beam off }{\rtlch \ltrch\loch
+: 0.11 msec}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+this is the wait-time }{\b\ab\rtlch \ltrch\loch
+before}{\rtlch \ltrch\loch
+ switching the color signal from bright to dark (blanked) to give the scanners enough time to reach the position where the blank change shall happen :}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+if this time is not correct the blank change appears in the wrong position}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+post beam off }{\rtlch \ltrch\loch
+: 0.074 msec}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+this is the wait-time }{\b\ab\rtlch \ltrch\loch
+after}{\rtlch \ltrch\loch
+ switching the color signal from bright to dark (blanked) to give the color system enough time to switch to dark }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+if this time is not correct, the blank transition is not "sharp" but shows a trail / tail}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+pre beam on }{\rtlch \ltrch\loch
+: 0.185 msec}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+this is the wait-time }{\b\ab\rtlch \ltrch\loch
+before}{\rtlch \ltrch\loch
+ switching the color signal from dark (blanked) to a given color to give the scanners enough time to reach the position where the blank change shall happen :}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+if this time is not correct the blank change appears in the wrong position}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+post beam on }{\rtlch \ltrch\loch
+: 0.074 msec}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+this is the wait-time }{\b\ab\rtlch \ltrch\loch
+after}{\rtlch \ltrch\loch
+ switching the color signal from dark (blanked) to a given color\~   to give the color system enough time to switch to dark }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+if this time is not correct, the blank transition is not "sharp" }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+color delay }{\rtlch \ltrch\loch
+: 0.11 msec}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+this is the time how much the color signal needs to be delayed to match the speed of the slower scanners i.e. to have the color change in the intended position.}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+if this time is not correct the color change appears in the wrong position}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+To start point repeat }{\rtlch \ltrch\loch
+: 0.778 msec}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+This is a wait time if he last point before the actual point is unknown. This can be the case when returning from clipping and we typically use this at the beginning of a frame.}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\b\ab\rtlch \ltrch\loch
+Scanner Angle Correction:}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+To avoid deformation on Y axis (mostly on the sides)}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+Convert to Scanner coordinates at the end, and divide by 1,4 (??) }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+To convert "Cartesian coordinates"X, Y to "scanner coordinates" SX, SY (range -1 .... +1 ) }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
++1 results in a scanner rotation of 40\'b0}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+SX = ATAN ( X * COS ( ATAN (Y) ) / maxScanAngle }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+SY = ATAN ( Y ) / maxScanAngle}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+maxScanAngle = 40\'ba if you do your calculations in DEG or maxScanAngle = 0.698132 if you calculate in RAD}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
++1 results in a scanner rotation of 40\'b0. ( all our projectors are calibrated to this) }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+The inverse calculations from "scanner coordinates" to "Cartesian coordinates" }
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+X = TAN ( SX * maxScanAngle ) / COS ( SY * maxScanAngle)}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082{\rtlch \ltrch\loch
+Y = TAN ( SY * maxScanAngle )}
+\par \pard\plain \s16{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\sb0\sa120\cf0\kerning1\hich\af0\langfe2052\dbch\af0\loch\f0\fs24\lang3082\sb0\sa120{\rtlch \ltrch\loch
+}
+\par }

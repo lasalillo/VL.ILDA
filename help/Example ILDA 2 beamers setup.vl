@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="PTOmbmTr6fJL479DzJWRBU" LanguageVersion="2024.6.0-0173-g0fa37470f9" Version="0.128">
+  <Patch Id="Mi4ctZocp5PPm6TPIzCKtk">
+    <Canvas Id="MjednETSkNqOtSvQ8EnfLR" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="EmYp81hKXiXPC71LA3Vyst">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="JA8KrR9tYoyNp5UiYaeL7e">
+        <Canvas Id="O2USY5btAZZLBcWfONov6u" CanvasType="Group">
+          <Node Bounds="200,205,84,19" Id="CoThgWLCYGTQP2EM6PJngI">
+            <p:NodeReference LastCategoryFullName="VL.ILDA" LastDependency="VL.ILDA.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ILDA_App_Test" />
+            </p:NodeReference>
+            <Pin Id="J9cUBPBpQYSOHbjGq0CeNI" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="UHbe8TxeMSCPHApWRiXQOo" Name="Update" Kind="InputPin" />
+          </Node>
+          <Pad Id="RrHmURv46JnOqBAwcUrZ5H" Bounds="291,212,103,19" ShowValueBox="true" isIOBox="true" Value="&lt; - Look inside">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="DARtFpxDPzZNzADVpGnP1V" Name="Create" />
+        <Patch Id="ALerEM76DmrM1SBIkehCfT" Name="Update" />
+        <ProcessDefinition Id="BSAFPym3GSzL3F60XuJ7sQ">
+          <Fragment Id="CqZ8VBYkE8sPKkFj5dAfCG" Patch="DARtFpxDPzZNzADVpGnP1V" Enabled="true" />
+          <Fragment Id="QRAvoNcdiQqOyuo4JfXJ1f" Patch="ALerEM76DmrM1SBIkehCfT" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="BTZRCmtuhVJMTC3ADrDEMS" Location="VL.CoreLib" Version="2024.6.0-0173-g0fa37470f9" />
+  <DocumentDependency Id="CksXkY54kzOPp6B75IwkEj" Location="../VL.ILDA.vl" />
+</Document>
