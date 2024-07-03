@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2024.6.0-0254-g5387c3cd24" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.0-0254-g5387c3cd24" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2024.6.7-0003-gda7bfe6f68" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.7-0003-gda7bfe6f68" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VL.ILDA" CanvasType="FullCategory">
       <!--
@@ -16736,6 +16736,7 @@
                 <Pin Id="KLuAVSdcJ6hOsfo0OMgVZu" Name="Reset" Kind="InputPin" />
                 <Pin Id="O6hFgn0uFwhL9OCzuI2eO3" Name="Value" Kind="OutputPin" />
                 <Pin Id="K4pAbCCj9PlMooqgoOqaeV" Name="Inverse Output" Kind="OutputPin" />
+                <Pin Id="RgQEwGQmHp0PkgKFaijy1q" Name="Current Frame" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="Jghev4ct3iVPXQt9E8Exs4" Bounds="1184,1519" />
               <ControlPoint Id="LrPtKHDcTbDPsgTu5iIyYI" Bounds="129,1835" />
@@ -23409,6 +23410,7 @@
               <Pin Id="L1AXHUZGuzQNp3PV0Nq8Mf" Name="Reset" Kind="InputPin" />
               <Pin Id="UYO6nlwTVFwPPe5xmq4zCG" Name="Value" Kind="OutputPin" />
               <Pin Id="K2zJHC4lsFONSjkO6Vy20l" Name="Inverse Output" Kind="OutputPin" />
+              <Pin Id="NqbFNoM2mozLGALtxsTxuY" Name="Current Frame" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="RlxzFMzP4SbLGWdrIhkRXx" Bounds="1073,394" />
             <ControlPoint Id="FxGQzHRgpXgPuxyRZ1vMWK" Bounds="1088,414" />
@@ -25721,6 +25723,7 @@
               <Pin Id="DICyS6IOeatOxXdlIwFHof" Name="Reset" Kind="InputPin" />
               <Pin Id="Sj5so1fhIUALRD6C3OTFYZ" Name="Value" Kind="OutputPin" />
               <Pin Id="PTRtZE1PA6pOfgmJFQaWWP" Name="Inverse Output" Kind="OutputPin" />
+              <Pin Id="LE44b26rNoaMfnx7s83TBF" Name="Current Frame" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="LWSeGbsIBjtMYJQWQgliJs" Bounds="1241,497" />
             <ControlPoint Id="IY9it0MW873MtYs5dnwQZ8" Bounds="1256,517" />
@@ -26241,10 +26244,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Bj21VTNqLqPORnOaLfOOPU" Location="VL.Skia" Version="2024.6.0-0254-g5387c3cd24" />
+  <NugetDependency Id="Bj21VTNqLqPORnOaLfOOPU" Location="VL.Skia" Version="2024.6.7-0003-gda7bfe6f68" />
   <NugetDependency Id="JXV45hFZHfCLPpUdacprQZ" Location="VL.2D.Simplify" Version="1.0.0" />
   <NugetDependency Id="R9LykdT4D3eONyDgYGeoyx" Location="Simplify.NET" Version="1.0.2" />
-  <NugetDependency Id="Ftt0GP9SpXsLFuKAusGkPw" Location="VL.Audio" Version="1.4.6-preview" />
+  <NugetDependency Id="Ftt0GP9SpXsLFuKAusGkPw" Location="VL.Audio" Version="1.8.2" />
   <NugetDependency Id="JcYWCAAZZZZQGb9oU7DlXf" Location="VL.WinFormsUtils" Version="1.0.9" />
   <PlatformDependency Id="Irmzz0kc2maONzmJ5Uf79Y" Location="System.Windows.Forms" />
 </Document>
